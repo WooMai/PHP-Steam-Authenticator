@@ -80,7 +80,7 @@ class SteamAuth {
 
 		for($i = 0; $i < 5; $i++)
 		{
-			$code = $code."".$SteamChars{floor($codePoint) % strlen($SteamChars)};
+			$code = $code."".$SteamChars[floor($codePoint) % strlen($SteamChars)];
 			$codePoint /= strlen($SteamChars);
 		}
 		return $code;
